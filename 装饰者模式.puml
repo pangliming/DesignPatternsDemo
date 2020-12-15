@@ -1,0 +1,32 @@
+@startuml
+
+ +abstract class Component{
+   +void operate()
+}
+
++class ConcreteComponent extends Component{
+   +void operate()<具体逻辑自己实现>
+}
+
++class Decorator extends Component{
+   -Component:component
+
+   + Decorator(Component)
+
+   + operate():void
+}
++class ConcreteComponentA extends Decorator{
+   +ConcreteComponentA(Component)
+   +operate():void
+   +operateA():void
+   +operateB():void
+}
++class ConcreteComponentB extends Decorator{
+ +ConcreteComponentB(Component)
+   +operate():void
+   +operateA():void
+   +operateB():void
+}
+
+Decorator o-- Component
+@enduml
