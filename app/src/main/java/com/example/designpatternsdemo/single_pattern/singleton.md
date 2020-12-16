@@ -20,7 +20,7 @@
 
   ## 单例模式类图
 
-  ![](/Users/pangliming/Desktop/单例模式.png)
+  ![](https://github.com/pangliming/DesignPatternsDemo/blob/master/app/src/main/java/com/example/designpatternsdemo/single_pattern/singleton.png)
 
   **角色：**
 
