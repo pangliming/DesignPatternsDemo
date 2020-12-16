@@ -1,0 +1,13 @@
+@startuml
+
+class Singleton{
+  + getInstance:Singleton
+  - Singleton():void
+}
+
+class Client{
+
+}
+Client ..> Singleton : <<use>>
+
+@enduml
